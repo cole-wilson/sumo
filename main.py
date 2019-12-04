@@ -1,4 +1,1 @@
-print('HIHIHI')
-#test
-
-k
+print('Load is successful')
