@@ -14,6 +14,5 @@ m = LargeMotor('outC')
 print('sleeping')
 sleep(3)
 print('driving')
-m.run_forever(speed_sp=900)
-print('drove')
-m.stop(stop_action="hold")
+
+m.run_timed(time_sp=1000, speed_sp=750)
