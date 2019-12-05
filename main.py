@@ -7,6 +7,6 @@ a = LargeMotor('outB')
 a.run_timed(time_sp=1000, speed_sp=-750)
 
 m = LargeMotor('outC')
-
+sleep(3)
 m.run_forever(speed_sp=900)
 m.stop(stop_action="hold")
