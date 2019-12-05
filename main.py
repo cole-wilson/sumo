@@ -3,6 +3,9 @@
 
 from ev3dev.ev3 import *
 from time import sleep
+
+input('enter to start')
+
 a = LargeMotor('outB')
 print('Moving arm')
 a.run_timed(time_sp=1000, speed_sp=750)
