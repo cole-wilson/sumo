@@ -3,6 +3,9 @@
 from ev3dev.ev3 import *
 from time import sleep
 
+
+#TODO: update sensors on physical robot.
+
 # Set sensor classes:
 ts1 = TouchSensor('in1')
 ts2 = TouchSensor('in2')
