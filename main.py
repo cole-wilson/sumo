@@ -15,4 +15,4 @@ print('sleeping')
 sleep(3)
 print('driving')
 
-m.run_timed(time_sp=1000, speed_sp=750)
+m.run_timed(time_sp=3000, speed_sp=-999)
