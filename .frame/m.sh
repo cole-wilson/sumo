@@ -1,7 +1,6 @@
-cp m.sh ~
-chmod +x ~/m.sh
-rm -r -f sumo
-cd sumo
-git clone https://github.com/cole-wilson/sumo.git
-echo "Done."
-exit
+rm -rf sumo
+git clone http://github.com/cole-wilson/sumo
+ssh robot@ev3dev.local prep
+sftp robot@ev3dev.local:/home/robot <<< $'put -rf sumo'
+echo 'PUSHED'
+echo 'PUSHED'
