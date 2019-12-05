@@ -3,7 +3,7 @@
 
 from ev3dev.ev3 import *
 from time import sleep
-m = LargeMotor('outB')
+m = LargeMotor('outC')
 
 m.run_forever(speed_sp=900)
 sleep(5)
