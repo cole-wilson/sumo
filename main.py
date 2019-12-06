@@ -9,7 +9,7 @@ ts1 = TouchSensor('in1')
 ts2 = TouchSensor('in2')
 ls = ColorSensor('in3')
 us = UltrasonicSensor('in4')
-
+#
 # Set motor classes:
 arm = LargeMotor('outB')
 wheel = LargeMotor('outC')
