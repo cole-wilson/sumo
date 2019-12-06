@@ -9,6 +9,9 @@ import os
 ts1 = TouchSensor('in1')
 ts2 = TouchSensor('in2')
 ls = ColorSensor('in3')
+
+colors = {0:'No color',1:'Black',2:'Blue',3:'Green',4:'Yellow',5:'Red',6:'White',7:'Brown'}
+
 us = UltrasonicSensor('in4')
 #
 # Set motor classes:
@@ -25,10 +28,14 @@ sleep(0.75)
 print('Waiting for Touch Sensor, or Ultrasonic Sensor')
 
 while not(ts1.value() or ts2.value()) or (us.value()<100) :
-    os.system('clear')
-    print('Touch Sensor 1 state: 0' if ts1.value() else 'Touch Sensor 1 state: 1')
-    print('Touch Sensor 1 state: 0' if ts1.value() else 'Touch Sensor 1 state: 1')
-    print(ls.value())
+    print('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n')
+    print('Touch Sensor 1 state:' + ts1.value())
+    print('Touch Sensor 2 state:' + ts2.value())
+    print('Light Sensor: ' + colors[ls.value()])
+    print('=', end='')
+    for x in range(us.value()):
+        print(' ',end='')
+    print('+')
 wheel.run_timed(time_sp=3000, speed_sp=-999)
 
 
