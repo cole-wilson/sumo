@@ -28,7 +28,7 @@ sleep(0.75)
 print('Waiting for Touch Sensor, or Ultrasonic Sensor')
 
 while not(ts1.value() or ts2.value()) or (us.value()<100) :
-    print('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n')
+    print('=============')
     print('Touch Sensor 1 state:' + str(ts1.value()))
     print('Touch Sensor 2 state:' + str(ts2.value()))
     print('Light Sensor: ' + colors[ls.value()])
