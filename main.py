@@ -45,7 +45,7 @@ while not(ts1.value() or ts2.value()) or us.value()<100:
     print('Touch Sensor 2 state:' + str(ts2.value()))
     print('Light Sensor: ' + colors[ls.value()])
     print(str(us.value())+'mm')
-wheel.run_timed(time_sp=3000, speed_sp=-999)
+wheel.run_timed(time_sp=3500, speed_sp=-999)
 
 
 print('Done')
