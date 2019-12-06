@@ -32,11 +32,7 @@ while not(ts1.value() or ts2.value()) or (us.value()<100) :
     print('Touch Sensor 1 state:' + str(ts1.value()))
     print('Touch Sensor 2 state:' + str(ts2.value()))
     print('Light Sensor: ' + colors[ls.value()])
-    print('=', end='')
-    #
-    for x in range(round(us.value()/2)):
-        print(' ',end='')
-    print('+')
+    print(str(us.value())+'mm')
 wheel.run_timed(time_sp=3000, speed_sp=-999)
 
 
