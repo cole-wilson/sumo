@@ -26,13 +26,9 @@ print('Waiting for Touch Sensor, or Ultrasonic Sensor')
 
 while not(ts1.value() or ts2.value()) or (us.value()<100) :
     os.system('clear')
-    print('-------------------')
-    print('|' + '        ' if ts1.value() else '+++++++' + '|        |')
-    print('|        |        |')
-    print('|        |        |')
-    print('-------------------')
-
-
+    print('Touch Sensor 1 state: 0' if ts1.value() else 'Touch Sensor 1 state: 1')
+    print('Touch Sensor 1 state: 0' if ts1.value() else 'Touch Sensor 1 state: 1')
+    print(ls.value())
 wheel.run_timed(time_sp=3000, speed_sp=-999)
 
 
