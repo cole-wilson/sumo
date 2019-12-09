@@ -23,7 +23,7 @@ print('Finished loading libraries.')
 input('Press the Enter key to start the program.')
 
 print('Moving arm for 200 milliseconds.')
-arm.run_timed(time_sp=-500, speed_sp=999)
+arm.run_timed(time_sp=700, speed_sp=-999)
 sleep(0.75)
 print('Waiting for Touch Sensor, or Ultrasonic Sensor')
 
