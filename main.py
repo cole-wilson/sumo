@@ -24,7 +24,7 @@ input('Press the Enter key to start the program.')
 
 print('Moving arm for 200 milliseconds.')
 arm.run_timed(time_sp=1500, speed_sp=-999)
-sleep(0.75)
+sleep(1.75)
 print('Waiting for Touch Sensor, or Ultrasonic Sensor')
 
 while not(ts1.value() or ts2.value()) or us.value()<250:
