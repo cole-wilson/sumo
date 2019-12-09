@@ -23,7 +23,7 @@ print('Finished loading libraries.')
 input('Press the Enter key to start the program.')
 
 print('Moving arm for 200 milliseconds.')
-arm.run_timed(time_sp=200, speed_sp=999)
+arm.run_timed(time_sp=-500, speed_sp=999)
 sleep(0.75)
 print('Waiting for Touch Sensor, or Ultrasonic Sensor')
 
@@ -40,7 +40,7 @@ while not(ts1.value() or ts2.value()) or us.value()<100:
         break
 
     time.sleep(0.5)
-    print('=============')
+    print('\n\n=============')
     print('Touch Sensor 1 state:' + str(ts1.value()))
     print('Touch Sensor 2 state:' + str(ts2.value()))
     try:
