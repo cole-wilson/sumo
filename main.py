@@ -48,10 +48,10 @@ while not(ts1.value() or ts2.value()) or us.value()<250:
     except KeyError:
         print('Light Sensor: Key Error')
     print(str(us.value())+'mm')
-wheel.on(-999, brake=True, block=False)
+wheel.run_forever(speed_sp=-999)
 while True:
     if not(ts2.value() or ts1.value() or us.value()<100):
-        wheel.off()
+        wheel.stop(action='hold')
 
 
 print('Done')
