@@ -1,0 +1,15 @@
+name: Test Program
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Import
+      run: git clone https://github.com/cole-wilson/sumo;cd sumo;pip install ev3dev;
+    - name: Test
+      run: python3 main.py;
